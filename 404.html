@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vilink</title>
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Vilink">
+<meta property="og:description" content="Comunidades, quedadas y amigos de tu ciudad.">
+<meta property="og:image" content="https://vilink.app/share/default/card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>body{margin:0;background:#0E1D1C;color:#E9F4E3;font-family:system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center}a{color:#96D272}</style>
+<script>
+  // Página para compartir que aún no existe (se crean cada pocas horas) o enlace viejo: a la app
+  (function () {
+    var p = location.pathname, h = location.hash, m;
+    if (/^#(c|i|u)\//.test(h)) { location.replace('/' + h); return; }
+    if ((m = p.match(/^\/c\/([0-9a-f-]{36})\/?$/i))) { location.replace('/#comm/' + m[1]); return; }
+    if ((m = p.match(/^\/e\/([0-9a-f-]{36})\/?$/i))) { location.replace('/#ev/' + m[1]); return; }
+    if ((m = p.match(/^\/u\/([a-z0-9_.]{3,20})\/?$/i))) { location.replace('/#p/' + m[1]); return; }
+  })();
+</script>
+</head>
+<body><p>Esta página no existe. <a href="/">Ir a Vilink</a></p></body>
+</html>
