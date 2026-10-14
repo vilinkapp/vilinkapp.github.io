@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.vilink.app",
+      "sha256_cert_fingerprints": [
+        "A6:0D:49:22:C1:1D:9C:89:06:43:D5:D2:86:13:85:DD:B6:7A:25:2D:9B:48:A1:79:05:71:06:84:37:1A:DE:63"
+      ]
+    }
+  }
+]
